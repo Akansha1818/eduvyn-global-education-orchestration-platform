@@ -75,17 +75,25 @@ const ContactPage = () => {
     {
       icon: MapPin,
       title: "Visit Us",
-      details: ["Connaught Place, New Delhi", "Delhi 110001, India"],
+      details: [
+        "1721, 16th Floor, Hope Tower (Office Tower),",
+        "Galaxy Blue Sapphire Plaza, Greater Noida West Rd, Sector 4, Greater Noida, Uttar Pradesh 201309"
+      ],
     },
     {
       icon: Phone,
       title: "Call Us",
-      details: ["+91 98765 43210", "+91 11 4567 8900"],
+      details: ["+91-9289272046", "+91-9289272047"],
     },
     {
       icon: Mail,
       title: "Email Us",
-      details: ["info@eduvyn.com", "admissions@eduvyn.com"],
+      details: ["info@unifoedu.com"],
+    },
+    {
+      icon: Globe,
+      title: "Website",
+      details: ["www.unifoedu.com"],
     },
     {
       icon: Clock,
@@ -106,8 +114,7 @@ const ContactPage = () => {
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
             Contact
             <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              {" "}
-              Us
+              {" "}Us
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -191,22 +198,11 @@ const ContactPage = () => {
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-500 focus:border-transparent"
                       >
                         <option value="">Select a service</option>
-                        <option value="university-selection">
-                          University Selection
-                        </option>
-                        <option value="application-assistance">
-                          Application Assistance
-                        </option>
-                        <option value="test-preparation">
-                          Test Preparation
-                        </option>
-                        <option value="visa-support">Visa Support</option>
-                        <option value="language-courses">
-                          Language Courses
-                        </option>
-                        <option value="scholarship-guidance">
-                          Scholarship Guidance
-                        </option>
+                        <option value="personalized-counseling">Personalized Counseling</option>
+                        <option value="university-selection">University Selection</option>
+                        <option value="application-scholarship-guidance">Application & Scholarship Guidance</option>
+                        <option value="visa-assistance">Visa Assistance</option>
+                        <option value="accommodation-support">Accommodation Support</option>
                       </select>
                     </div>
                   </div>
@@ -256,25 +252,9 @@ const ContactPage = () => {
                   >
                     {loading ? (
                       <>
-                        <svg
-                          className="animate-spin h-5 w-5 mr-2 text-white"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                        >
-                          <circle
-                            className="opacity-25"
-                            cx="12"
-                            cy="12"
-                            r="10"
-                            stroke="currentColor"
-                            strokeWidth="4"
-                          ></circle>
-                          <path
-                            className="opacity-75"
-                            fill="currentColor"
-                            d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
-                          ></path>
+                        <svg className="animate-spin h-5 w-5 mr-2 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                          <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                          <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path>
                         </svg>
                         Sending...
                       </>
@@ -309,24 +289,6 @@ const ContactPage = () => {
                   </div>
                 </div>
               ))}
-
-              {/* <div className="bg-gray-800 rounded-xl p-6 text-white">
-                <h3 className="font-semibold mb-4">Quick Actions</h3>
-                <div className="space-y-3">
-                  <button className="w-full bg-gray-700 hover:bg-gray-600 px-4 py-3 rounded-lg text-sm font-medium transition-colors flex items-center">
-                    <Calendar className="w-4 h-4 mr-3" />
-                    Schedule Free Consultation
-                  </button>
-                  <button className="w-full bg-gray-700 hover:bg-gray-600 px-4 py-3 rounded-lg text-sm font-medium transition-colors flex items-center">
-                    <BookOpen className="w-4 h-4 mr-3" />
-                    Download Brochure
-                  </button>
-                  <button className="w-full bg-gray-700 hover:bg-gray-600 px-4 py-3 rounded-lg text-sm font-medium transition-colors flex items-center">
-                    <MessageSquare className="w-4 h-4 mr-3" />
-                    WhatsApp Chat
-                  </button>
-                </div>
-              </div> */}
             </div>
           </div>
         </div>
@@ -337,20 +299,8 @@ const ContactPage = () => {
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Find Us</h2>
             <p className="text-gray-600">
-              Our main office location in New Delhi
+              Our main office location in Greater Noida
             </p>
-          </div>
-
-          <div className="bg-white rounded-xl p-8 shadow-md">
-            <div className="bg-gray-200 h-96 rounded-lg flex items-center justify-center">
-              <div className="text-center">
-                <MapPin className="w-12 h-12 text-gray-400 mx-auto mb-4" />
-                <p className="text-gray-600 font-medium">Interactive Map</p>
-                <p className="text-gray-500 text-sm">
-                  Connaught Place, New Delhi
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </section>

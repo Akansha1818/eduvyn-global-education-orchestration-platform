@@ -47,91 +47,96 @@ const ServicesPage = () => {
   }, []);
 
   const studyAbroadServices = [
-    {
-      title: "University Selection & Research",
-      description:
-        "Comprehensive research and shortlisting of universities based on your academic profile, career goals, and budget preferences.",
-      features: [
-        "Personalized university matching",
-        "Program compatibility analysis",
-        "Scholarship opportunity identification",
-        "Campus culture assessment",
-      ],
-      icon: BookOpen,
-      color: "from-blue-500 to-cyan-500",
-      duration: "2-3 weeks",
-    },
-    {
-      title: "Application Assistance",
-      description:
-        "End-to-end support for university applications including documentation, essays, and submission management.",
-      features: [
-        "Statement of Purpose (SOP) crafting",
-        "Letter of Recommendation guidance",
-        "Application form completion",
-        "Document verification and submission",
-      ],
-      icon: FileText,
-      color: "from-purple-500 to-pink-500",
-      duration: "4-6 weeks",
-    },
-    {
-      title: "Test Preparation",
-      description:
-        "Comprehensive coaching for standardized tests required for international admissions.",
-      features: [
-        "IELTS/TOEFL/PTE coaching",
-        "GRE/GMAT/SAT preparation",
-        "Mock tests and practice sessions",
-        "Personalized study plans",
-      ],
-      icon: Award,
-      color: "from-green-500 to-emerald-500",
-      duration: "8-12 weeks",
-    },
-    {
-      title: "Visa Consultation & Support",
-      description:
-        "Expert guidance through the visa application process with high success rates.",
-      features: [
-        "Visa documentation assistance",
-        "Interview preparation sessions",
-        "Application form guidance",
-        "Embassy liaison support",
-      ],
-      icon: Plane,
-      color: "from-yellow-500 to-orange-500",
-      duration: "3-4 weeks",
-    },
-    {
-      title: "Scholarship Guidance",
-      description:
-        "Maximize your funding opportunities with our comprehensive scholarship search and application support.",
-      features: [
-        "Scholarship database access",
-        "Application strategy development",
-        "Essay and proposal writing",
-        "Merit scholarship positioning",
-      ],
-      icon: Star,
-      color: "from-red-500 to-pink-500",
-      duration: "2-4 weeks",
-    },
-    {
-      title: "Pre-Departure Services",
-      description:
-        "Complete preparation for your international education journey, from accommodation to cultural orientation.",
-      features: [
-        "Accommodation arrangements",
-        "Travel planning assistance",
-        "Cultural orientation sessions",
-        "Student community connections",
-      ],
-      icon: GraduationCap,
-      color: "from-indigo-500 to-purple-500",
-      duration: "2-3 weeks",
-    },
-  ];
+  {
+    title: "Personalized Counseling",
+    description:
+      "One-on-one expert counseling to understand your aspirations, academic background, and help chart the perfect study abroad path.",
+    features: [
+      "Profile evaluation & goal setting",
+      "Clarify doubts on countries & courses",
+      "Set realistic timelines",
+      "Personal growth planning",
+    ],
+    icon: Users,  // make sure Users is imported from lucide-react
+    color: "from-teal-500 to-green-500",
+    duration: "1-2 weeks",
+  },
+  {
+    title: "University Selection & Research",
+    description:
+      "Comprehensive research and shortlisting of universities based on your academic profile, career goals, and budget preferences.",
+    features: [
+      "Personalized university matching",
+      "Program compatibility analysis",
+      "Scholarship opportunity identification",
+      "Campus culture assessment",
+    ],
+    icon: BookOpen,
+    color: "from-blue-500 to-cyan-500",
+    duration: "2-3 weeks",
+  },
+  {
+    title: "Test Preparation",
+    description:
+      "Comprehensive coaching for standardized tests required for international admissions.",
+    features: [
+      "IELTS/TOEFL/PTE coaching",
+      "GRE/GMAT/SAT preparation",
+      "Mock tests and practice sessions",
+      "Personalized study plans",
+    ],
+    icon: Award,
+    color: "from-green-500 to-emerald-500",
+    duration: "4-8 weeks",
+  },
+  {
+    title: "Application & Scholarship Assistance",
+    description:
+      "End-to-end support for university applications, essays, documentation, and maximizing your scholarship opportunities.",
+    features: [
+      "Statement of Purpose (SOP) crafting",
+      "Letter of Recommendation guidance",
+      "Scholarship database access",
+      "Essay and proposal writing",
+      "Application form completion",
+      "Document verification and submission",
+      "Merit scholarship positioning",
+      "Application strategy development",
+    ],
+    icon: FileText,  
+    color: "from-purple-500 to-pink-500",
+    duration: "10-12 weeks",
+  },
+  {
+    title: "Visa Consultation & Support",
+    description:
+      "Expert guidance through the visa application process with high success rates.",
+    features: [
+      "Visa documentation assistance",
+      "Interview preparation sessions",
+      "Application form guidance",
+      "Embassy liaison support",
+    ],
+    icon: Plane,
+    color: "from-yellow-500 to-orange-500",
+    duration: "3-4 weeks",
+  },
+  {
+    title: "Pre-Departure Services",
+    description:
+      "Complete preparation for your international education journey, from accommodation to cultural orientation.",
+    features: [
+      "Accommodation arrangements",
+      "Travel planning assistance",
+      "Cultural orientation sessions",
+      "Student community connections",
+    ],
+    icon: GraduationCap,
+    color: "from-indigo-500 to-purple-500",
+    duration: "2-3 weeks",
+  },
+];
+
 
   const languageCourses = [
     {

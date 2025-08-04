@@ -18,8 +18,8 @@ const AboutPage = () => {
   }, []);
 
   const stats = [
-    { number: "15K+", label: "Students Guided", icon: Users },
-    { number: "50+", label: "Partner Universities", icon: BookOpen },
+    { number: "6K+", label: "Students Guided", icon: Users },
+    { number: "1200+", label: "Partner Universities", icon: BookOpen },
     { number: "25+", label: "Countries", icon: Globe },
     { number: "98%", label: "Success Rate", icon: Award },
   ];
@@ -43,7 +43,7 @@ const AboutPage = () => {
             >
               <div className="mb-6">
                 <span className="bg-gradient-to-r from-blue-100 to-purple-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold border border-blue-200">
-                  About Eduvyn Education
+                  About Eduvyn
                 </span>
               </div>
               <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
@@ -52,10 +52,24 @@ const AboutPage = () => {
                   Enabling Futures
                 </span>
               </h1>
-              <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                Founded in 2018, Eduvyn Education has helped thousands of
-                students transform their academic aspirations into global
-                success stories.
+              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+                At Eduvyn, we are an AI-powered EdTech company committed to
+                helping students make informed and strategic academic decisions.
+                Our intelligent platform guides learners in discovering the
+                right program in the right country, aligning their choices with
+                personal goals, academic background, and career aspirations. We
+                specialize in undergraduate admissions across high-demand fields
+                such as Medicine, Engineering, Law, Computer Science & IT,
+                Business, Finance, Aerospace, and more. Whether you're aiming to
+                study in the USA, UK, Canada, Australia, Ireland, or Europe,
+                Eduvyn serves as your trusted compass in navigating global
+                education pathways. Our platform also features advanced
+                AI-driven self-assessment tools for test preparation, covering
+                major exams like SAT, UCAT, GRE, GMAT, IELTS, and TOEFL. These
+                tools help students identify their strengths and weaknesses,
+                optimize their prep strategies, and improve their chances of
+                success. With Eduvyn, every student is empowered to take charge
+                of their academic future—smarter, faster, and with confidence.
               </p>
             </div>
 
@@ -131,46 +145,6 @@ const AboutPage = () => {
                 graduates.
               </p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            About Our Founder
-          </h2>
-          <div className="flex justify-center mb-4">
-            <img
-              src="/images/founder.jpg" 
-              alt="Dr. Sarah Johnson"
-              className="w-24 h-24 rounded-full object-cover shadow-lg"
-            />
-          </div>
-
-          <h3 className="text-2xl font-semibold text-gray-900 mb-2">
-            Dr. Sarah Johnson
-          </h3>
-          <p className="text-blue-600 font-medium mb-2">
-            Founder & CEO • 15+ years experience
-          </p>
-          <p className="text-gray-500 text-sm mb-4">
-            Specialization: International Education Strategy
-          </p>
-          <p className="text-gray-600 text-base mb-4">
-            Former university admissions director with deep expertise in global
-            education trends and student counseling.
-          </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
-              PhD in Education
-            </span>
-            <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
-              Ex-Harvard Admissions
-            </span>
-            <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
-              10K+ Students Guided
-            </span>
           </div>
         </div>
       </section>

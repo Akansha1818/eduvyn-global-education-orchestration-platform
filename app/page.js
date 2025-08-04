@@ -2,16 +2,15 @@
 import React, { useState, useEffect } from "react";
 import {
   ChevronRight,
-  Globe,
-  Users,
   Award,
   BookOpen,
   Star,
   ArrowRight,
+  Home,
+  Users,
   GraduationCap,
   ClipboardList,
   Plane,
-  BadgeDollarSign,
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -23,7 +22,6 @@ const EduvynHomepage = () => {
   const [activeBanner, setActiveBanner] = useState(0);
   const [banners, setBanners] = useState([]);
   const [loadingBanners, setLoadingBanners] = useState(true);
-
 
   useEffect(() => {
     const fetchBanners = async () => {
@@ -58,47 +56,80 @@ const EduvynHomepage = () => {
   }, []);
 
   const stats = [
-    { number: "15K+", label: "Students Placed", icon: Users },
-    { number: "50+", label: "Partner Universities", icon: BookOpen },
-    { number: "25+", label: "Countries", icon: Globe },
+    { number: "6K+", label: "Students Placed", icon: Users },
+    { number: "1.2K+", label: "Partner Universities", icon: BookOpen },
     { number: "98%", label: "Success Rate", icon: Award },
   ];
 
   const countries = [
-    { name: "United States", image: "🇺🇸", color: "from-blue-500 to-red-500" },
-    { name: "United Kingdom", image: "🇬🇧", color: "from-blue-600 to-red-400" },
-    { name: "Canada", image: "🇨🇦", color: "from-red-500 to-white" },
-    { name: "Australia", image: "🇦🇺", color: "from-blue-500 to-green-500" },
+    {
+      name: "United Kingdom",
+      code: "UK",
+      flagImage: "/images/uk-flag.jpg",
+      monumentImage: "/images/big-ben.png",
+    },
+    {
+      name: "United States",
+      code: "US",
+      flagImage: "/images/us-flag.jpg",
+      monumentImage: "/images/statue-of-liberty.png",
+    },
+    {
+      name: "Canada",
+      code: "CA",
+      flagImage: "/images/canada-flag.jpg",
+      monumentImage: "/images/cn-tower.png",
+    },
+    {
+      name: "Australia",
+      code: "AU",
+      flagImage: "/images/australia-flag.jpg",
+      monumentImage: "/images/sydney-opera-house.png",
+    },
   ];
 
   const services = [
     {
-      title: "University Selection",
+      title: "Personalized Counseling",
       description:
-        "Find the perfect match from our network of 500+ partner universities worldwide.",
-      icon: <GraduationCap className="w-6 h-6" />,
+        "One-on-one expert guidance to choose the best path tailored to your goals and profile.",
+      icon: <Users className="w-6 h-6" />,
       gradient: "from-purple-500 to-pink-500",
     },
     {
-      title: "Application Support",
+      title: "University Selection",
       description:
-        "Complete guidance through documentation, essays, and application processes.",
-      icon: <ClipboardList className="w-6 h-6" />,
+        "Find the perfect match from our global network of top universities based on your profile.",
+      icon: <GraduationCap className="w-6 h-6" />,
       gradient: "from-blue-500 to-cyan-500",
+    },
+    {
+      title: "Test Preparation",
+      description:
+        "Expert coaching and resources for exams like UCAT, SAT, GRE, IELTS, TOEFL, and more.",
+      icon: <Award className="w-6 h-6" />,
+      gradient: "from-indigo-500 to-purple-500",
+    },
+    {
+      title: "Application & Scholarship Guidance",
+      description:
+        "End-to-end support for preparing applications, essays, and exploring scholarship opportunities.",
+      icon: <ClipboardList className="w-6 h-6" />,
+      gradient: "from-green-500 to-emerald-500",
     },
     {
       title: "Visa Assistance",
       description:
-        "Expert guidance for visa documentation and interview preparation.",
+        "Complete guidance for visa paperwork, interview preparation, and process tracking.",
       icon: <Plane className="w-6 h-6" />,
-      gradient: "from-green-500 to-emerald-500",
+      gradient: "from-yellow-500 to-orange-500",
     },
     {
-      title: "Scholarship Guidance",
+      title: "Accommodation Support",
       description:
-        "Maximize your funding opportunities with our scholarship expertise.",
-      icon: <BadgeDollarSign className="w-6 h-6" />,
-      gradient: "from-yellow-500 to-orange-500",
+        "Help finding and securing safe and comfortable accommodation abroad near your campus.",
+      icon: <Home className="w-6 h-6" />,
+      gradient: "from-red-500 to-pink-500",
     },
   ];
 
@@ -194,14 +225,28 @@ const EduvynHomepage = () => {
                     {countries.map((country, index) => (
                       <div
                         key={index}
-                        className={`p-4 rounded-xl border-2 transition-all duration-500 cursor-pointer ${
+                        className={`p-4 rounded-xl border-2 bg-cover bg-top transition-all duration-500 cursor-pointer ${
                           activeCountry === index
-                            ? "border-blue-500 bg-blue-50 scale-105"
+                            ? "border-blue-500 scale-105"
                             : "border-gray-200 hover:border-gray-300"
                         }`}
+                        style={{
+                          backgroundImage: `url(${country.monumentImage})`,
+                          opacity: activeCountry === index ? 1 : 0.5,
+                        }}
                       >
                         <div className="text-center">
-                          <div className="text-3xl mb-2">{country.image}</div>
+                          <div className="relative flex justify-center items-center">
+                            <div
+                              className="relative text-5xl font-bold mb-2 uppercase bg-contain bg-left-bottom text-transparent bg-clip-text"
+                              style={{
+                                backgroundImage: `url(${country.flagImage})`,
+                              }}
+                            >
+                              {country.code}
+                            </div>
+                          </div>
+
                           <p className="font-semibold text-gray-900">
                             {country.name}
                           </p>
@@ -215,6 +260,7 @@ const EduvynHomepage = () => {
           </div>
         </div>
       </section>
+
       <section className="relative overflow-hidden w-full h-[300px] md:h-[400px] lg:h-[500px]">
         {loadingBanners ? (
           <div className="flex justify-center items-center w-full h-full text-gray-500">
@@ -243,7 +289,6 @@ const EduvynHomepage = () => {
                       <p className="text-white text-sm md:text-lg mb-6 max-w-2xl">
                         Uploaded on {banner.uploadDate}
                       </p>
-                      {/* Optional button */}
                       <a
                         href="/contact"
                         className="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition-all text-sm md:text-base"
@@ -256,7 +301,6 @@ const EduvynHomepage = () => {
               ))}
             </div>
 
-            {/* Dots */}
             <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
               {banners.map((_, i) => (
                 <button
@@ -274,7 +318,7 @@ const EduvynHomepage = () => {
 
       <section className="py-16 bg-gradient-to-r from-blue-600 to-purple-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-8">
             {stats.map((stat, index) => (
               <div
                 key={index}
@@ -317,7 +361,7 @@ const EduvynHomepage = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <div
                 key={index}
@@ -411,9 +455,6 @@ const EduvynHomepage = () => {
             >
               Contact Us
             </a>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-blue-600 transition-all">
-              Download Brochure
-            </button>
           </div>
         </div>
       </section>

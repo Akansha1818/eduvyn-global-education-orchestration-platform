@@ -33,23 +33,9 @@ const RoadmapPage = () => {
       color: "from-blue-500 to-cyan-500"
     },
     {
-      phase: "Phase 2", 
-      title: "University Research & Selection",
-      duration: "Week 3-4",
-      description: "Comprehensive research and shortlisting of universities based on your profile and preferences.",
-      tasks: [
-        "Research universities and programs",
-        "Analyze admission requirements",
-        "Shortlist 8-12 universities",
-        "Create application timeline"
-      ],
-      icon: BookOpen,
-      color: "from-purple-500 to-pink-500"
-    },
-    {
-      phase: "Phase 3",
+      phase: "Phase 2",
       title: "Test Preparation & Language Training",
-      duration: "Week 5-16",
+      duration: "Week 3-4",
       description: "Prepare for standardized tests and enhance language skills for your chosen destination.",
       tasks: [
         "IELTS/TOEFL/PTE preparation",
@@ -59,6 +45,20 @@ const RoadmapPage = () => {
       ],
       icon: Award,
       color: "from-green-500 to-emerald-500"
+    },
+    {
+      phase: "Phase 3", 
+      title: "University Research & Selection",
+      duration: "Week 5-16",
+      description: "Comprehensive research and shortlisting of universities based on your profile and preferences.",
+      tasks: [
+        "Research universities and programs",
+        "Analyze admission requirements",
+        "Shortlist 8-12 universities",
+        "Create application timeline"
+      ],
+      icon: BookOpen,
+      color: "from-purple-500 to-pink-500"
     },
     {
       phase: "Phase 4",
@@ -136,7 +136,7 @@ const RoadmapPage = () => {
     { month: "Month 1-2", activity: "Assessment & Research", status: "active" },
     { month: "Month 3-4", activity: "Test Prep & Training", status: "upcoming" },
     { month: "Month 5-6", activity: "Applications", status: "upcoming" },
-    { month: "Month 7-8", activity: "Visa & Departure", status: "upcoming" }
+    { month: "Month 7-9", activity: "Visa & Departure", status: "upcoming" }
   ];
 
   return (
@@ -170,7 +170,7 @@ const RoadmapPage = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">8-Month Journey</span> Overview
+              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">9-Month Journey</span> Overview
             </h2>
             <p className="text-lg text-gray-600">A structured timeline to help you plan and track your progress</p>
           </div>
