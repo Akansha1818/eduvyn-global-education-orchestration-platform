@@ -113,7 +113,9 @@ const ContactPage = () => {
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
             Contact
-            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-indigo-900 to-sky-400
+
+ bg-clip-text text-transparent">
               {" "}Us
             </span>
           </h2>

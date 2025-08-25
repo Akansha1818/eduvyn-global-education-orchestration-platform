@@ -154,7 +154,9 @@ const RoadmapPage = () => {
             
             <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
               Your Step-by-Step
-              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent block">
+              <span className="bg-gradient-to-r from-indigo-900 to-sky-400
+
+ bg-clip-text text-transparent block">
                 Study Abroad Journey
               </span>
             </h1>
@@ -170,7 +172,9 @@ const RoadmapPage = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">9-Month Journey</span> Overview
+              <span className="bg-gradient-to-r from-indigo-900 to-sky-400
+
+ bg-clip-text text-transparent">9-Month Journey</span> Overview
             </h2>
             <p className="text-lg text-gray-600">A structured timeline to help you plan and track your progress</p>
           </div>
@@ -206,7 +210,9 @@ const RoadmapPage = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
               Detailed
-              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"> Roadmap Phases</span>
+              <span className="bg-gradient-to-r from-indigo-900 to-sky-400
+
+ bg-clip-text text-transparent"> Roadmap Phases</span>
             </h2>
             <p className="text-xl text-gray-600">
               Each phase is carefully designed to build upon the previous one, ensuring comprehensive preparation

@@ -48,7 +48,9 @@ const AboutPage = () => {
               </div>
               <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
                 Empowering Dreams,
-                <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent block">
+                <span className="bg-gradient-to-r from-indigo-900 to-sky-400
+
+ bg-clip-text text-transparent block">
                   Enabling Futures
                 </span>
               </h1>
@@ -89,7 +91,9 @@ const AboutPage = () => {
                         key={index}
                         className="text-center p-4 bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl"
                       >
-                        <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full mb-3">
+                        <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-r from-indigo-900 to-sky-400
+
+ rounded-full mb-3">
                           <stat.icon className="w-6 h-6 text-white" />
                         </div>
                         <div className="text-2xl font-bold text-gray-900 mb-1">
@@ -108,7 +112,9 @@ const AboutPage = () => {
         </div>
       </section>
 
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600 px-4 sm:px-6 lg:px-8">
+      <section className="py-20 bg-gradient-to-r from-indigo-900 to-sky-400
+
+ px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12">
             <div

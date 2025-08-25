@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Eduyn Education",
+  title: "Eduyn",
   description: "Empowering Global Education",
 };
 

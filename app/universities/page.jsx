@@ -392,7 +392,9 @@ const UniversitiesPage = () => {
 
             <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
               World-Class
-              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent block">
+              <span className="bg-gradient-to-r from-indigo-900 to-sky-400
+
+ bg-clip-text text-transparent block">
                 Partner Universities
               </span>
             </h1>
@@ -423,7 +425,9 @@ const UniversitiesPage = () => {
                 }`}
                 style={{ transitionDelay: `${index * 150}ms` }}
               >
-                <div className="flex items-center justify-center w-12 h-12 mb-3 rounded-full bg-gradient-to-r from-blue-600 to-purple-600">
+                <div className="flex items-center justify-center w-12 h-12 mb-3 rounded-full bg-gradient-to-r from-indigo-900 to-sky-400
+
+">
                   <stat.icon className="w-6 h-6 text-white" />
                 </div>
                 <div className="text-2xl font-bold text-gray-900 mb-1">
@@ -523,7 +527,9 @@ const UniversitiesPage = () => {
                 onMouseEnter={() => setHoveredUniversity(index)}
                 onMouseLeave={() => setHoveredUniversity(null)}
               >
-                <div className="relative p-6 bg-gradient-to-r from-blue-600 to-purple-600">
+                <div className="relative p-6 bg-gradient-to-r from-indigo-900 to-sky-400
+
+">
                   <div className="flex items-start justify-between">
                     <div className="flex-1">
                       <div className="flex items-center space-x-2 mb-2">
@@ -669,7 +675,9 @@ const UniversitiesPage = () => {
         </div>
       </section>
 
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600 px-4 sm:px-6 lg:px-8">
+      <section className="py-20 bg-gradient-to-r from-indigo-900 to-sky-400
+
+ px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
             Why Our University Partnerships Matter

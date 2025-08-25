@@ -1,9 +1,6 @@
 import React from "react";
-import {
-  Globe,
-  Mail,
-  Phone,
-} from "lucide-react";
+import { Globe, Mail, Phone } from "lucide-react";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -11,11 +8,14 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="col-span-2">
-            <div className="flex items-center space-x-2 mb-6">
-              <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl flex items-center justify-center">
-                <Globe className="text-white w-6 h-6" />
-              </div>
-              <span className="text-2xl font-bold">Eduvyn</span>
+            <div className="flex space-x-2">
+              <Image
+                src="/images/logo.png"
+                alt="Eduvyn Logo"
+                width={150}
+                height={150}
+                className="rounded-xl"
+              />
             </div>
             <p className="text-gray-400 mb-6 max-w-md">
               Empowering students to achieve their international education
@@ -64,7 +64,9 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="flex gap-2 hover:text-white transition-colors cursor-pointer"
               >
-                <Globe className="w-14" /> 1721, 16th Floor, Hope Tower (Office Tower), Galaxy Blue Sapphire Plaza, Greater Noida West Rd, Sector 4, Greater Noida, Uttar Pradesh 201309
+                <Globe className="w-14" /> 1721, 16th Floor, Hope Tower (Office
+                Tower), Galaxy Blue Sapphire Plaza, Greater Noida West Rd,
+                Sector 4, Greater Noida, Uttar Pradesh 201309
               </a>
               <a
                 href="tel:+919289272046"
@@ -78,26 +80,19 @@ const Footer = () => {
               >
                 <Phone className="w-4" /> +91-9289272047
               </a>
-              <a
-                href="https://www.unifoedu.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex gap-2 hover:text-white transition-colors cursor-pointer"
-              >
-                <Globe className="w-4" /> www.unifoedu.com
-              </a>
             </div>
           </div>
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
           <p>
-            &copy; 2025 UnifoEdu. All rights reserved. | Designed for aspiring global students
+            &copy; 2025 Eduvyn. All rights reserved. | Designed for aspiring
+            global students
           </p>
         </div>
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;
