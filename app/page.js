@@ -62,76 +62,57 @@ const EduvynHomepage = () => {
   ];
 
   const countries = [
-    {
-      name: "United Kingdom",
-      code: "UK",
-      flagImage: "/images/uk-flag.jpg",
-      monumentImage: "/images/big-ben.png",
-    },
-    {
-      name: "United States",
-      code: "US",
-      flagImage: "/images/us-flag.jpg",
-      monumentImage: "/images/statue-of-liberty.png",
-    },
-    {
-      name: "Canada",
-      code: "CA",
-      flagImage: "/images/canada-flag.jpg",
-      monumentImage: "/images/cn-tower.png",
-    },
-    {
-      name: "Australia",
-      code: "AU",
-      flagImage: "/images/australia-flag.jpg",
-      monumentImage: "/images/sydney-opera-house.png",
-    },
-  ];
+  {
+    name: "United Kingdom",
+    code: "UK",
+    flagImage: "/images/uk-flag.jpg",
+    monumentImage: "/images/big-ben.png",
+  },
+  {
+    name: "United States",
+    code: "US",
+    flagImage: "/images/us-flag.jpg",
+    monumentImage: "/images/statue-of-liberty.png",
+  },
+  {
+    name: "Canada",
+    code: "CA",
+    flagImage: "/images/canada-flag.jpg",
+    monumentImage: "/images/cn-tower.png",
+  },
+  {
+    name: "Australia",
+    code: "AU",
+    flagImage: "/images/australia-flag.jpg",
+    monumentImage: "/images/sydney-opera-house.png",
+  },
+  {
+    name: "Ireland",
+    code: "IE",
+    flagImage: "/images/ireland-flag.jpg",
+    monumentImage: "/images/cliffs-of-moher.png", 
+  },
+  {
+    name: "Singapore",
+    code: "SG",
+    flagImage: "/images/singapore-flag.jpg",
+    monumentImage: "/images/merlion.png",
+  },
+  {
+    name: "Dubai",
+    code: "DXB", 
+    flagImage: "/images/uae-flag.jpg",
+    monumentImage: "/images/burj-khalifa.png",
+  },
+  {
+    name: "Europe",
+    code: "EU",
+    flagImage: "/images/eu-flag.jpg",
+    monumentImage: "/images/eiffel-tower.png", 
+  },
+];
 
-  // const services = [
-  //   {
-  //     title: "Personalized Counseling",
-  //     description:
-  //       "One-on-one expert guidance to choose the best path tailored to your goals and profile.",
-  //     icon: <Users className="w-6 h-6" />,
-  //     gradient: "from-purple-500 to-pink-500",
-  //   },
-  //   {
-  //     title: "University Selection",
-  //     description:
-  //       "Find the perfect match from our global network of top universities based on your profile.",
-  //     icon: <GraduationCap className="w-6 h-6" />,
-  //     gradient: "from-blue-500 to-cyan-500",
-  //   },
-  //   {
-  //     title: "Test Preparation",
-  //     description:
-  //       "Expert coaching and resources for exams like UCAT, SAT, GRE, IELTS, TOEFL, and more.",
-  //     icon: <Award className="w-6 h-6" />,
-  //     gradient: "from-indigo-500 to-purple-500",
-  //   },
-  //   {
-  //     title: "Application & Scholarship Guidance",
-  //     description:
-  //       "End-to-end support for preparing applications, essays, and exploring scholarship opportunities.",
-  //     icon: <ClipboardList className="w-6 h-6" />,
-  //     gradient: "from-green-500 to-emerald-500",
-  //   },
-  //   {
-  //     title: "Visa Assistance",
-  //     description:
-  //       "Complete guidance for visa paperwork, interview preparation, and process tracking.",
-  //     icon: <Plane className="w-6 h-6" />,
-  //     gradient: "from-yellow-500 to-orange-500",
-  //   },
-  //   {
-  //     title: "Accommodation Support",
-  //     description:
-  //       "Help finding and securing safe and comfortable accommodation abroad near your campus.",
-  //     icon: <Home className="w-6 h-6" />,
-  //     gradient: "from-red-500 to-pink-500",
-  //   },
-  // ];
+
   const services = [
     {
       title: "Personalized Counseling",

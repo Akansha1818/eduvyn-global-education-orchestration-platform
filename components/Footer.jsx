@@ -64,21 +64,13 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="flex gap-2 hover:text-white transition-colors cursor-pointer"
               >
-                <Globe className="w-14" /> 1721, 16th Floor, Hope Tower (Office
-                Tower), Galaxy Blue Sapphire Plaza, Greater Noida West Rd,
-                Sector 4, Greater Noida, Uttar Pradesh 201309
+                <Globe className="w-14" /> Sky Garden sector 16B Greater Noida west, Uttar Pradesh
               </a>
               <a
                 href="tel:+919289272046"
                 className="flex gap-2 hover:text-white transition-colors cursor-pointer"
               >
-                <Phone className="w-4" /> +91-9289272046
-              </a>
-              <a
-                href="tel:+919289272047"
-                className="flex gap-2 hover:text-white transition-colors cursor-pointer"
-              >
-                <Phone className="w-4" /> +91-9289272047
+                <Phone className="w-4" /> +91-8527361010
               </a>
             </div>
           </div>
