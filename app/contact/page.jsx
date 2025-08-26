@@ -76,24 +76,18 @@ const ContactPage = () => {
       icon: MapPin,
       title: "Visit Us",
       details: [
-        "1721, 16th Floor, Hope Tower (Office Tower),",
-        "Galaxy Blue Sapphire Plaza, Greater Noida West Rd, Sector 4, Greater Noida, Uttar Pradesh 201309"
+        "Sky Garden sector 16B Greater Noida west, Uttar Pradesh"
       ],
     },
     {
       icon: Phone,
       title: "Call Us",
-      details: ["+91-9289272046", "+91-9289272047"],
+      details: ["+91-8527361010"],
     },
     {
       icon: Mail,
       title: "Email Us",
-      details: ["info@unifoedu.com"],
-    },
-    {
-      icon: Globe,
-      title: "Website",
-      details: ["www.unifoedu.com"],
+      details: ["Eduvyneducation@gmail.com"],
     },
     {
       icon: Clock,

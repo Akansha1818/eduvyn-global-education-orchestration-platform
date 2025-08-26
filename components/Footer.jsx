@@ -12,9 +12,9 @@ const Footer = () => {
               <Image
                 src="/images/logo.png"
                 alt="Eduvyn Logo"
-                width={150}
-                height={150}
-                className="rounded-xl"
+                width={250}
+                height={250}
+                className="rounded-xl invert-25 text-white"
               />
             </div>
             <p className="text-gray-400 mb-6 max-w-md">
