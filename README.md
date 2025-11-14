@@ -166,13 +166,6 @@ If you find bugs or want to request features, please open an issue on GitHub:
 https://github.com/Akansha1818/eduvyn-global-education-orchestration-platform/issues
 
 ---
-
-## License
-
-No license specified in the repository metadata. If you want others to use or contribute under a specific license, add a LICENSE file (for example MIT, Apache-2.0, etc.).
-
----
-
 ## Contact
 
 Project: Eduvyn  
